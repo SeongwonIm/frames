@@ -23,7 +23,7 @@ const allSeries = (await getCollection('series')).sort(
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
         {allSeries.map((entry) => (
-          <a href={`/optics/series/${entry.id}`} class="group block">
+          <a href={`/frames/series/${entry.id}`} class="group block">
             <div class="overflow-hidden bg-neutral-200">
               <Image
                 src={entry.data.cover}

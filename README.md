@@ -1,5 +1,5 @@
 # frames
 
-Photography archive and visual journal
+Photography archive
 
 **Live:** [https://seongwonim.github.io/frames/](https://seongwonim.github.io/frames/)
