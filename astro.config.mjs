@@ -3,7 +3,7 @@ import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
   site: 'https://seongwonim.github.io',
-  base: '/optics',
+  base: '/frames',
   devToolbar: {
     enabled: false,
   },
