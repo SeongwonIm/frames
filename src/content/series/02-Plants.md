@@ -8,7 +8,7 @@ photos:
   - src: "../../assets/photos/02-Plants/DSC_0472.JPG"
     caption: "A plant in the living room."
   - src: "../../assets/photos/02-Plants/DSC_0473.JPG"
-    caption: "A ripe persimmon in the reading room."
+    caption: "Ripe persimmons in the reading room."
   - src: "../../assets/photos/02-Plants/DSC_0474.JPG"
     caption: "A plant in the kitchen."
 ---
