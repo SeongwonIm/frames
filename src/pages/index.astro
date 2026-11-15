@@ -2,6 +2,7 @@
 import '../styles/global.css';
 import { getCollection } from 'astro:content';
 import { Image } from 'astro:assets';
+import logo from '../assets/ISW_logo.jpg';
 
 const allSeries = (await getCollection('series')).sort(
   (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
@@ -12,16 +13,20 @@ const allSeries = (await getCollection('series')).sort(
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>ISW Studio</title>
+    <title>frames</title>
   </head>
   <body class="bg-neutral-50 text-neutral-900 antialiased">
     <main class="max-w-5xl mx-auto px-6 py-16">
-      <header class="mb-16">
-        <h1 class="text-xl font-medium tracking-tight">Daily Clicks</h1>
-        <p class="text-sm text-neutral-500 mt-1">Nikon D3400 · Archive</p>
+      <header class="w-full mb-16 flex flex-col items-center justify-center text-center">
+        <img
+          src={logo.src}
+          alt="ISW"
+          class="block h-16 md:h-20 w-auto mix-blend-multiply"
+        />
+        <p class="text-sm text-neutral-500 mt-3">Nikon D3400 · Visual Archive</p>
       </header>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
         {allSeries.map((entry) => (
           <a href={`/frames/series/${entry.id}`} class="group block">
             <div class="overflow-hidden bg-neutral-200">
